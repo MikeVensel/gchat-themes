@@ -223,6 +223,12 @@ const ruleSwaps: {[key in (keyof Theme["props"] | 'misc')]: Array<any>} = {
             transform: function(theme, themeProp, themeValue, style) {
                 style.color = theme.userNameColor;
             }
+        },
+        {
+            selectorTexts: ['.FS4hgd.iWO5td.iWO5td, div .dHI9xe.KKjvXb, div .dHI9xe.qs41qe'],
+            transform: function(theme, themeProp, themeValue, style) {
+                style.backgroundColor = theme.props.chatTitleBackground;
+            }
         }
     ]
 };
